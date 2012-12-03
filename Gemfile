@@ -39,6 +39,8 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent', '0.9.1', :require => false
+  gem 'growl', '1.0.3'
 end
 
 group :production do
@@ -47,4 +49,8 @@ end
 
 group :development, :test do
   gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'guard-rspec', '1.2.1'
+  gem 'spork', '0.9.2'
 end
+
+
